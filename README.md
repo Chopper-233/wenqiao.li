@@ -30,7 +30,7 @@ GitHub settings: **Settings → Pages → Deploy from a branch → main → / (r
 
 The layout is inspired by [Changyi Lin](https://linchangyi1.github.io/) and [Jon Barron](https://jonbarron.info/). Publication metadata were checked against arXiv and the CVF Open Access proceedings. Unconfirmed degree dates, supervisors, awards, and employment titles are intentionally omitted.
 
-- Profile photograph: the public GitHub avatar for [Chopper-233](https://github.com/Chopper-233).
+- Profile portrait: illustration supplied by Wenqiao Li on October 9, 2026.
 - UVTA: the author's project teaser, [project page](https://uni-vta.github.io/).
 - DexEMG: [Figure 1](https://arxiv.org/html/2603.05861v1/figures/fig1-teaser-1.jpg).
 - PASDF: [teaser](https://arxiv.org/html/2505.24431v1/PASDF_teaser_figure.png).
