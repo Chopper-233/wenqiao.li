@@ -8,9 +8,10 @@ Personal academic homepage for Wenqiao Li.
 
 - `index.html`: biography, contact links, and publications.
 - `styles.css`: layout, typography, and responsive styles.
-- `assets/`: profile photograph and publication figures.
+- `media.js`: in-view playback and accessible pause controls for research previews.
+- `assets/`: profile portrait, publication figures, icons, and muted video previews.
 
-The website is plain HTML and CSS. No build step, package installation, or API key is needed.
+The website uses plain HTML, CSS, and a small video-playback script. No build step, package installation, or API key is needed. Video previews are available in WebM and MP4 for browser compatibility, respect reduced-motion preferences, and retain native controls when JavaScript is unavailable.
 
 ## Preview locally
 
@@ -31,11 +32,15 @@ GitHub settings: **Settings → Pages → Deploy from a branch → main → / (r
 The layout is inspired by [Changyi Lin](https://linchangyi1.github.io/) and [Jon Barron](https://jonbarron.info/). The biography, advisors, and research affiliations were supplied by Wenqiao Li. Publication metadata were checked against arXiv and the CVF Open Access proceedings. Unconfirmed degree dates and awards are intentionally omitted.
 
 - Profile portrait: illustration supplied by Wenqiao Li on October 9, 2026.
-- UVTA: the author's project teaser, [project page](https://uni-vta.github.io/).
+- UVTA: the author's real-robot page-turning demo from the [project page](https://uni-vta.github.io/), cropped to focus on the hand-object interaction, with no audio.
 - DexEMG: [Figure 1](https://arxiv.org/html/2603.05861v1/figures/fig1-teaser-1.jpg).
 - PASDF: [teaser](https://arxiv.org/html/2505.24431v1/PASDF_teaser_figure.png).
-- MulSen-AD: [data collection figure](https://raw.githubusercontent.com/ZZZBBBZZZ/MulSen-AD/main/img/device.png).
-- Phys-AD: [data collection figure](https://guyao2023.github.io/Phys-AD/data%20collection.png).
+- MulSen-AD: [multimodal examples](https://raw.githubusercontent.com/ZZZBBBZZZ/MulSen-AD/main/img/cases.png).
+- Phys-AD: [project demonstration](https://guyao2023.github.io/Phys-AD/demo1.mp4), trimmed to skip the opening white screen and resized for a lightweight, silent preview.
 - Anomaly-ShapeNet: [examples](https://raw.githubusercontent.com/Chopper-233/Anomaly-ShapeNet/main/examples.png).
 
 Publication figures remain attributed to the respective research works and authors; they are not relicensed as website artwork.
+
+Google Scholar, GitHub, and X icons are from [Simple Icons](https://simpleicons.org/) (CC0); the email icon is from [Lucide](https://lucide.dev/) (ISC). License files are included in `assets/icons/`. Brand marks belong to their respective owners.
+
+DexEMG's IROS acceptance and the Academic Service list were supplied by Wenqiao Li.

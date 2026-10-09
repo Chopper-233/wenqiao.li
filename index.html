@@ -7,7 +7,8 @@
   <meta name="theme-color" content="#ffffff">
   <title>Wenqiao Li</title>
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231772d0'/%3E%3Ctext x='32' y='43' text-anchor='middle' font-family='Arial,sans-serif' font-size='32' font-weight='700' fill='white'%3EWL%3C/text%3E%3C/svg%3E">
-  <link rel="stylesheet" href="styles.css?v=20261009-2">
+  <link rel="stylesheet" href="styles.css?v=20261009-3">
+  <script src="media.js?v=20261009-1" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#research">Skip to research</a>
@@ -15,14 +16,14 @@
     <header class="profile">
       <div class="profile-copy">
         <h1>Wenqiao Li</h1>
-        <p class="affiliation"><a href="https://en.sjtu.edu.cn/">Shanghai Jiao Tong University</a> · Shanghai, China</p>
-        <p>I am a Ph.D. student at <a href="https://en.sjtu.edu.cn/">SJTU</a>, advised by <a href="https://siyuanhuang.com/">Dr. Siyuan Huang</a>, <a href="https://alvinwen428.github.io/">Prof. Chuan Wen</a>, and <a href="https://tengyu.ai/">Dr. Tengyu Liu</a>. During my master's studies, I was supervised by <a href="https://sca.shanghaitech.edu.cn/sca_en/2020/1101/c7936a57116/page.htm">Prof. Yingna Wu</a> and <a href="https://datascience.hku.hk/people/shenghua-gao/">Prof. Shenghua Gao</a>. I am also a Student Researcher at <a href="https://www.sharpa.com/">Sharpa</a> and the <a href="https://bigai.ai/">Beijing Institute for General AI</a>, working on dexterous manipulation through full-stack solutions.</p>
-        <p>My research interests lie in dexterous manipulation and robot perception. <strong>My long-term goal is to build general-purpose robots that can understand and interact with the world like humans.</strong> I am currently focusing on dexterous manipulation, tactile sensing, exoskeletons, and representation learning.</p>
+        <p class="affiliation"><a href="https://soai.sjtu.edu.cn/">School of Artificial Intelligence</a>, <a href="https://en.sjtu.edu.cn/">Shanghai Jiao Tong University</a></p>
+        <p>I am a Ph.D. student at the <a href="https://soai.sjtu.edu.cn/">School of Artificial Intelligence, SJTU</a>, advised by <a href="https://siyuanhuang.com/">Dr. Siyuan Huang</a>, <a href="https://alvinwen428.github.io/">Prof. Chuan Wen</a>, and <a href="https://tengyu.ai/">Dr. Tengyu Liu</a>. During my master's studies, I was supervised by <a href="https://sca.shanghaitech.edu.cn/sca_en/2020/1101/c7936a57116/page.htm">Prof. Yingna Wu</a> and <a href="https://datascience.hku.hk/people/shenghua-gao/">Prof. Shenghua Gao</a>. I am also a Student Researcher at <a href="https://www.sharpa.com/">Sharpa</a> and the <a href="https://bigai.ai/">Beijing Institute for General AI</a>, working on dexterous manipulation through full-stack solutions.</p>
+        <p>My research interests lie in dexterous manipulation and robot perception. <strong>My long-term goal is to make robots more useful.</strong> I am currently focusing on dexterous manipulation, tactile sensing, exoskeletons, and representation learning.</p>
         <nav class="contact-links" aria-label="Contact and profiles">
-          <a href="mailto:wenqiaoli@sjtu.edu.cn">Email</a>
-          <a href="https://scholar.google.com/citations?user=O1yPINMAAAAJ&amp;hl=en">Google Scholar</a>
-          <a href="https://github.com/Chopper-233">GitHub</a>
-          <a href="https://x.com/liwenjiao2">Twitter / X</a>
+          <a class="icon-link" href="mailto:wenqiaoli@sjtu.edu.cn" aria-label="Email Wenqiao Li" title="Email"><img src="assets/icons/email.svg" width="26" height="26" alt=""></a>
+          <a class="icon-link" href="https://scholar.google.com/citations?user=O1yPINMAAAAJ&amp;hl=en" aria-label="Google Scholar" title="Google Scholar"><img src="assets/icons/google-scholar.svg" width="26" height="26" alt=""></a>
+          <a class="icon-link" href="https://github.com/Chopper-233" aria-label="GitHub" title="GitHub"><img src="assets/icons/github.svg" width="26" height="26" alt=""></a>
+          <a class="icon-link" href="https://x.com/liwenjiao2" aria-label="Twitter / X" title="Twitter / X"><img src="assets/icons/x.svg" width="26" height="26" alt=""></a>
         </nav>
       </div>
       <a class="portrait-link" href="assets/portrait.png" aria-label="View Wenqiao Li's profile portrait">
@@ -33,14 +34,18 @@
     <section class="research" id="research" aria-labelledby="research-heading">
       <div class="section-heading">
         <h2 id="research-heading">Research</h2>
-        <a href="https://scholar.google.com/citations?user=O1yPINMAAAAJ&amp;hl=en">Google Scholar</a>
+        <a class="icon-link" href="https://scholar.google.com/citations?user=O1yPINMAAAAJ&amp;hl=en" aria-label="View publications on Google Scholar" title="Google Scholar"><img src="assets/icons/google-scholar.svg" width="24" height="24" alt=""></a>
       </div>
-      <p class="section-intro">Robotics, tactile learning, and visual understanding.</p>
       <div class="publications">
         <article class="publication featured">
-          <a class="paper-image" href="https://uni-vta.github.io/" tabindex="-1" aria-hidden="true">
-            <img src="assets/uvta.jpg" width="240" height="160" alt="" loading="lazy">
-          </a>
+          <div class="paper-image paper-video">
+            <video id="uvta-video" data-label="UVTA" loop muted playsinline controls preload="metadata" poster="assets/videos/uvta-poster.jpg" aria-label="UVTA robot turning a book page">
+              <source src="assets/videos/uvta-preview.webm" type="video/webm">
+              <source src="assets/videos/uvta-preview.mp4" type="video/mp4">
+              <a href="assets/videos/uvta-preview.mp4">Watch the UVTA demonstration</a>
+            </video>
+            <button class="video-toggle" type="button" aria-controls="uvta-video" aria-label="Play UVTA video" hidden></button>
+          </div>
           <div class="paper-copy">
             <h3><a href="https://uni-vta.github.io/">UVTA: Unified Visual-Tactile-Action Modeling from Human Demonstrations for Dexterous Manipulation</a></h3>
             <p class="authors"><strong>Wenqiao Li</strong>, Qianyou Zhao, Jiawen Hao, Xuezhou Zhu, Tengyu Liu, Kaifeng Zhang, Chuan Wen, Siyuan Huang</p>
@@ -56,13 +61,13 @@
           <div class="paper-copy">
             <h3><a href="https://arxiv.org/abs/2603.05861">DexEMG: Towards Dexterous Teleoperation System via EMG2Pose Generalization</a></h3>
             <p class="authors">Qianyou Zhao, <strong>Wenqiao Li</strong>, Chiyu Wang, Kaifeng Zhang</p>
-            <p class="venue">arXiv, 2026</p>
+            <p class="venue">IROS, 2026 <span class="accepted">Accepted</span></p>
             <nav class="paper-links" aria-label="DexEMG resources"><a href="https://arxiv.org/abs/2603.05861">Paper</a></nav>
             <p class="paper-summary">A lightweight dexterous teleoperation system that maps muscle activity to hand poses and robot actions.</p>
           </div>
         </article>
         <article class="publication">
-          <a class="paper-image" href="https://arxiv.org/abs/2505.24431" tabindex="-1" aria-hidden="true">
+          <a class="paper-image paper-image--pasdf" href="https://arxiv.org/abs/2505.24431" tabindex="-1" aria-hidden="true">
             <img src="assets/pasdf.png" width="240" height="160" alt="" loading="lazy">
           </a>
           <div class="paper-copy">
@@ -75,7 +80,7 @@
         </article>
         <article class="publication">
           <a class="paper-image" href="https://arxiv.org/abs/2412.14592" tabindex="-1" aria-hidden="true">
-            <img src="assets/mulsen.png" width="240" height="160" alt="" loading="lazy">
+            <img src="assets/mulsen-cases.webp" width="240" height="160" alt="" loading="lazy">
           </a>
           <div class="paper-copy">
             <h3><a href="https://arxiv.org/abs/2412.14592">Multi-Sensor Object Anomaly Detection: Unifying Appearance, Geometry, and Internal Properties</a></h3>
@@ -86,9 +91,14 @@
           </div>
         </article>
         <article class="publication">
-          <a class="paper-image" href="https://guyao2023.github.io/Phys-AD/" tabindex="-1" aria-hidden="true">
-            <img src="assets/physics.png" width="240" height="160" alt="" loading="lazy">
-          </a>
+          <div class="paper-image paper-video">
+            <video id="physics-video" data-label="Phys-AD" loop muted playsinline controls preload="metadata" poster="assets/videos/phys-ad-poster.jpg" aria-label="Phys-AD demonstration of physics-grounded anomaly reasoning">
+              <source src="assets/videos/phys-ad-preview.webm" type="video/webm">
+              <source src="assets/videos/phys-ad-preview.mp4" type="video/mp4">
+              <a href="assets/videos/phys-ad-preview.mp4">Watch the Phys-AD demonstration</a>
+            </video>
+            <button class="video-toggle" type="button" aria-controls="physics-video" aria-label="Play Phys-AD video" hidden></button>
+          </div>
           <div class="paper-copy">
             <h3><a href="https://guyao2023.github.io/Phys-AD/">Towards Visual Discrimination and Reasoning of Real-World Physical Dynamics: Physics-Grounded Anomaly Detection</a></h3>
             <p class="authors"><strong>Wenqiao Li</strong>, Yao Gu, Xintao Chen, Xiaohao Xu, Ming Hu, Xiaonan Huang, Yingna Wu</p>
@@ -110,6 +120,9 @@
           </div>
         </article>
       </div>
+    </section>
+    <section class="academic-service" aria-label="Academic service">
+      <p><strong>Academic Service:</strong> Reviewer for CVPR, NeurIPS, ECCV, ACM MM, IEEE TMM, and other venues.</p>
     </section>
     <footer>
       <a href="mailto:wenqiaoli@sjtu.edu.cn">wenqiaoli@sjtu.edu.cn</a>
