@@ -6,6 +6,7 @@
   --muted: #626a73;
   --link: #1768b4;
   --line: #e6e9ed;
+  --paper-summary: #bf8048;
 }
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
@@ -36,18 +37,18 @@ h2 { font-size: 1.5625rem; line-height: 1.35; font-weight: 500; margin: 0; lette
 .paper-image { position: relative; display: flex; align-items: center; justify-content: center; width: 100%; aspect-ratio: 16 / 10; overflow: hidden; border: 1px solid var(--line); border-radius: .4rem; background: #fff; }
 .paper-image > img, .paper-image video { display: block; width: 100%; height: 100%; object-fit: contain; }
 .paper-image--pasdf > img { object-fit: cover; object-position: center bottom; }
-.dexemg-panel { display: block; width: auto; max-width: 100%; height: 100%; aspect-ratio: 2660 / 1920; overflow: hidden; }
+.paper-image--dexemg { aspect-ratio: 2660 / 1920; }
+.dexemg-panel { display: block; width: 100%; height: 100%; overflow: hidden; }
 .paper-video { background: #f7f9fc; }
 .paper-video video[role="button"] { cursor: pointer; }
 .paper-video video:focus-visible { outline: 3px solid #1768b4; outline-offset: -3px; }
-.accepted { margin-left: .4rem; color: #1768b4; font-size: .75rem; font-style: normal; font-weight: 600; }
 h3 { font-size: 1rem; line-height: 1.45; font-weight: 700; margin: 0 0 .4375rem; }
 .authors { font-size: .875rem; line-height: 1.6; margin-bottom: .3125rem; }
 .authors strong { color: #20242a; font-weight: 700; }
 .venue { font-size: .875rem; font-style: italic; margin-bottom: .3125rem; }
 .paper-links { display: flex; gap: 0; flex-wrap: wrap; font-size: .875rem; font-weight: 600; }
 .paper-links a + a::before { content: "/"; color: #a3aab3; font-weight: 400; margin: 0 .625rem; display: inline-block; }
-.paper-summary { font-size: 1rem; line-height: 1.55; margin: .5625rem 0 0; }
+.paper-summary { color: var(--paper-summary); font-size: 1rem; line-height: 1.55; margin: .5625rem 0 0; }
 footer { margin-top: 3rem; padding-top: 1.375rem; border-top: 1px solid var(--line); display: flex; justify-content: space-between; flex-wrap: wrap; gap: .75rem; font-size: .8125rem; color: var(--muted); }
 footer p { margin: 0; }
 .academic-service { margin-top: 2.5rem; padding-top: 1.5rem; border-top: 1px solid var(--line); }
