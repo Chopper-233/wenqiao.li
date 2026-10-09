@@ -32,12 +32,12 @@ GitHub settings: **Settings → Pages → Deploy from a branch → main → / (r
 The layout is inspired by [Changyi Lin](https://linchangyi1.github.io/) and [Jon Barron](https://jonbarron.info/). The biography, advisors, and research affiliations were supplied by Wenqiao Li. Publication metadata were checked against arXiv and the CVF Open Access proceedings. Unconfirmed degree dates and awards are intentionally omitted.
 
 - Profile portrait: illustration supplied by Wenqiao Li on October 9, 2026.
-- UVTA: side-by-side original-speed clips of human light-bulb data collection (`light1.mp4`, seconds 12–24) and robot light-bulb manipulation (`light/light.mp4`, seconds 125–137). These are separate demonstrations, not time-synchronized recordings. The crops focus on the hands and bulb and exclude the participant's face. No audio is included.
+- UVTA: side-by-side clips of human light-bulb data collection at **1×** (`light1.mp4`, seconds 12–19.2, left) and robot light-bulb manipulation at **5×** (`light/light.mp4`, seconds 125–161, right), combined into a 7.2-second loop. Speed is applied only to the robot clip before compositing. These are separate demonstrations, not time-synchronized recordings. The crops focus on the hands and bulb and exclude the participant's face. No audio is included.
 - DexEMG: the robot-and-human-hand panel matching the supplied reference, displayed from the upper-left of the original [Figure 1](https://arxiv.org/html/2603.05861v1/figures/fig1-teaser-1.jpg), without the surrounding plots and other panels.
-- PASDF: [teaser](https://arxiv.org/html/2505.24431v1/PASDF_teaser_figure.png).
-- MulSen-AD: [multimodal examples](https://raw.githubusercontent.com/ZZZBBBZZZ/MulSen-AD/main/img/cases.png).
-- Phys-AD: [project demonstration](https://guyao2023.github.io/Phys-AD/demo1.mp4), trimmed to skip the opening white screen and resized for a lightweight, silent preview.
-- Anomaly-ShapeNet: [examples](https://raw.githubusercontent.com/Chopper-233/Anomaly-ShapeNet/main/examples.png).
+- PASDF: full [network architecture](https://arxiv.org/html/2505.24431v1/network.png), including pose-wise alignment and the SDF network.
+- MulSen-AD: full [multimodal pipeline](https://arxiv.org/html/2412.14592v1/mulsen_pipeline.png), including RGB, infrared, and point-cloud memory banks and the Decision Gating Unit.
+- Phys-AD: the 15 normal physical-interaction videos from the [project homepage](https://guyao2023.github.io/Phys-AD/), arranged in its original 5-column × 3-row order. Each source loops independently at its original speed in a silent 12-second preview. Row 1: `ball.mp4`, `button.mp4`, `car.mp4`, `clip.mp4`, `hinge.mp4`; row 2: `liquid.mp4`, `magnet.mp4`, `rolling_bear.mp4`, `rubber_band.mp4`, `screw.mp4`; row 3: `slide.mp4`, `sticky_roller.mp4`, `toothpaste.mp4`, `fan_n.mp4`, `zipper.mp4`. Source URLs are relative to the project homepage.
+- Anomaly-ShapeNet: full [IMRNet training/testing architecture](https://arxiv.org/html/2311.14897v3/Architecture.png).
 
 Publication figures remain attributed to the respective research works and authors; they are not relicensed as website artwork.
 
