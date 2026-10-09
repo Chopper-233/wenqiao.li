@@ -13,7 +13,7 @@ Personal academic homepage for Wenqiao Li.
 
 The website uses plain HTML, CSS, and a small video-playback script. No build step, package installation, or API key is needed. Video previews are available in WebM and MP4 for browser compatibility and respect reduced-motion preferences. There are no visible playback buttons: click a video or focus it and press Enter/Space to pause or resume. Without JavaScript, the poster remains visible and the publication's project link provides access to the full demonstration.
 
-Publication previews share a 16:10 frame, with a 22rem desktop media column. Content retains its original aspect ratio inside the frame; wide diagrams and the 5×3 video grid are not stretched or cropped. Click a method diagram to open its full-size SVG. The SVGs preserve vector text and paths from the original figure PDFs (embedded photos retain their source resolution). Video previews are re-encoded from the original clips: UVTA at 960×600 and Phys-AD at 2416×818, with H.264 CRF 17 and VP9 CRF 22.
+Publication previews use a 22rem desktop media column. Most previews use a 16:10 frame; the wide Phys-AD 5×3 montage uses its native 2416:818 aspect ratio to avoid top/bottom letterboxing. Content retains its original proportions without stretching or cropping. Click a method diagram to open its full-size SVG. The SVGs preserve vector text and paths from the original figure PDFs (embedded photos retain their source resolution). Video previews are re-encoded from the original clips: UVTA at 960×600 and Phys-AD at 2416×818, with H.264 CRF 17 and VP9 CRF 22.
 
 ## Preview locally
 
@@ -34,6 +34,7 @@ GitHub settings: **Settings → Pages → Deploy from a branch → main → / (r
 The layout is inspired by [Changyi Lin](https://linchangyi1.github.io/) and [Jon Barron](https://jonbarron.info/). The biography, advisors, and research affiliations were supplied by Wenqiao Li. Publication metadata were checked against arXiv and the CVF Open Access proceedings. Unconfirmed degree dates and awards are intentionally omitted.
 
 - Profile portrait: illustration supplied by Wenqiao Li on October 9, 2026.
+- Chinese name: 李文峤, set in a locally hosted, three-character subset of [Ma Shan Zheng](https://github.com/google/fonts/tree/main/ofl/mashanzheng) with an oblique style. The SIL Open Font License is included in `assets/fonts/OFL-MaShanZheng.txt`.
 - UVTA: side-by-side clips of human light-bulb data collection at **1×** (`light1.mp4`, seconds 12–19.2, left) and robot light-bulb manipulation at **5×** (`light/light.mp4`, seconds 125–161, right), combined into a 7.2-second loop. Speed is applied only to the robot clip before compositing. These are separate demonstrations, not time-synchronized recordings. The crops focus on the hands and bulb and exclude the participant's face. No audio is included.
 - DexEMG: the robot-and-human-hand panel matching the supplied reference, displayed from the upper-left of the original [Figure 1](https://arxiv.org/html/2603.05861v1/figures/fig1-teaser-1.jpg), without the surrounding plots and other panels.
 - PASDF: full network architecture, including pose-wise alignment and the SDF network; SVG converted using `pdftocairo -svg` from `figs/network.pdf` in the [arXiv source](https://arxiv.org/src/2505.24431v1).
