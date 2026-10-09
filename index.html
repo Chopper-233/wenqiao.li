@@ -7,8 +7,8 @@
   <meta name="theme-color" content="#ffffff">
   <title>Wenqiao Li</title>
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231772d0'/%3E%3Ctext x='32' y='43' text-anchor='middle' font-family='Arial,sans-serif' font-size='32' font-weight='700' fill='white'%3EWL%3C/text%3E%3C/svg%3E">
-  <link rel="stylesheet" href="styles.css?v=20261009-3">
-  <script src="media.js?v=20261009-1" defer></script>
+  <link rel="stylesheet" href="styles.css?v=20261009-4">
+  <script src="media.js?v=20261009-2" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#research">Skip to research</a>
@@ -37,14 +37,13 @@
         <a class="icon-link" href="https://scholar.google.com/citations?user=O1yPINMAAAAJ&amp;hl=en" aria-label="View publications on Google Scholar" title="Google Scholar"><img src="assets/icons/google-scholar.svg" width="24" height="24" alt=""></a>
       </div>
       <div class="publications">
-        <article class="publication featured">
+        <article class="publication">
           <div class="paper-image paper-video">
-            <video id="uvta-video" data-label="UVTA" loop muted playsinline controls preload="metadata" poster="assets/videos/uvta-poster.jpg" aria-label="UVTA robot turning a book page">
-              <source src="assets/videos/uvta-preview.webm" type="video/webm">
-              <source src="assets/videos/uvta-preview.mp4" type="video/mp4">
-              <a href="assets/videos/uvta-preview.mp4">Watch the UVTA demonstration</a>
+            <video id="uvta-video" data-label="UVTA: human data collection and robot light-bulb manipulation" loop muted playsinline preload="metadata" poster="assets/videos/uvta-bulb-poster.jpg" aria-label="UVTA: human data collection and robot light-bulb manipulation">
+              <source src="assets/videos/uvta-bulb-pair.webm" type="video/webm">
+              <source src="assets/videos/uvta-bulb-pair.mp4" type="video/mp4">
+              <a href="assets/videos/uvta-bulb-pair.mp4">Watch the UVTA demonstration</a>
             </video>
-            <button class="video-toggle" type="button" aria-controls="uvta-video" aria-label="Play UVTA video" hidden></button>
           </div>
           <div class="paper-copy">
             <h3><a href="https://uni-vta.github.io/">UVTA: Unified Visual-Tactile-Action Modeling from Human Demonstrations for Dexterous Manipulation</a></h3>
@@ -56,7 +55,9 @@
         </article>
         <article class="publication">
           <a class="paper-image" href="https://arxiv.org/abs/2603.05861" tabindex="-1" aria-hidden="true">
-            <img src="assets/dexemg.jpg" width="240" height="160" alt="" loading="lazy">
+            <svg class="dexemg-panel" viewBox="110 0 2660 1920" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <image href="assets/dexemg.jpg" width="7040" height="3456" />
+            </svg>
           </a>
           <div class="paper-copy">
             <h3><a href="https://arxiv.org/abs/2603.05861">DexEMG: Towards Dexterous Teleoperation System via EMG2Pose Generalization</a></h3>
@@ -92,12 +93,11 @@
         </article>
         <article class="publication">
           <div class="paper-image paper-video">
-            <video id="physics-video" data-label="Phys-AD" loop muted playsinline controls preload="metadata" poster="assets/videos/phys-ad-poster.jpg" aria-label="Phys-AD demonstration of physics-grounded anomaly reasoning">
+            <video id="physics-video" data-label="Phys-AD" loop muted playsinline preload="metadata" poster="assets/videos/phys-ad-poster.jpg" aria-label="Phys-AD demonstration of physics-grounded anomaly reasoning">
               <source src="assets/videos/phys-ad-preview.webm" type="video/webm">
               <source src="assets/videos/phys-ad-preview.mp4" type="video/mp4">
               <a href="assets/videos/phys-ad-preview.mp4">Watch the Phys-AD demonstration</a>
             </video>
-            <button class="video-toggle" type="button" aria-controls="physics-video" aria-label="Play Phys-AD video" hidden></button>
           </div>
           <div class="paper-copy">
             <h3><a href="https://guyao2023.github.io/Phys-AD/">Towards Visual Discrimination and Reasoning of Real-World Physical Dynamics: Physics-Grounded Anomaly Detection</a></h3>
