@@ -7,7 +7,7 @@
   <meta name="theme-color" content="#ffffff">
   <title>Wenqiao Li</title>
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231772d0'/%3E%3Ctext x='32' y='43' text-anchor='middle' font-family='Arial,sans-serif' font-size='32' font-weight='700' fill='white'%3EWL%3C/text%3E%3C/svg%3E">
-  <link rel="stylesheet" href="styles.css?v=20261009-6">
+  <link rel="stylesheet" href="styles.css?v=20261009-7">
   <script src="media.js?v=20261009-2" defer></script>
 </head>
 <body>
@@ -39,10 +39,10 @@
       <div class="publications">
         <article class="publication">
           <div class="paper-image paper-video">
-            <video id="uvta-video" data-label="UVTA: human light-bulb data collection at 1× (left), robot light-bulb manipulation at 5× (right)" loop muted playsinline preload="metadata" poster="assets/videos/uvta-bulb-5x-poster.jpg" aria-label="UVTA: human light-bulb data collection at 1× (left), robot light-bulb manipulation at 5× (right)">
-              <source src="assets/videos/uvta-bulb-5x.webm" type="video/webm">
-              <source src="assets/videos/uvta-bulb-5x.mp4" type="video/mp4">
-              <a href="assets/videos/uvta-bulb-5x.mp4">Watch the UVTA demonstration</a>
+            <video id="uvta-video" data-label="UVTA: human light-bulb data collection at 1× (left), robot light-bulb manipulation at 5× (right)" loop muted playsinline preload="metadata" poster="assets/videos/uvta-bulb-5x-hq-poster.jpg" aria-label="UVTA: human light-bulb data collection at 1× (left), robot light-bulb manipulation at 5× (right)">
+              <source src="assets/videos/uvta-bulb-5x-hq.webm" type="video/webm">
+              <source src="assets/videos/uvta-bulb-5x-hq.mp4" type="video/mp4">
+              <a href="assets/videos/uvta-bulb-5x-hq.mp4">Watch the UVTA demonstration</a>
             </video>
           </div>
           <div class="paper-copy">
@@ -56,7 +56,8 @@
         <article class="publication">
           <a class="paper-image paper-image--dexemg" href="https://arxiv.org/abs/2603.05861" tabindex="-1" aria-hidden="true">
             <svg class="dexemg-panel" viewBox="110 0 2660 1920" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-              <image href="assets/dexemg.jpg" width="7040" height="3456" />
+              <defs><clipPath id="dexemg-panel-crop"><rect x="110" y="0" width="2660" height="1920" /></clipPath></defs>
+              <image href="assets/dexemg.jpg" width="7040" height="3456" clip-path="url(#dexemg-panel-crop)" />
             </svg>
           </a>
           <div class="paper-copy">
@@ -68,8 +69,8 @@
           </div>
         </article>
         <article class="publication">
-          <a class="paper-image paper-image--pasdf" href="https://arxiv.org/abs/2505.24431" tabindex="-1" aria-hidden="true">
-            <img src="assets/pasdf-network.png" width="1600" height="759" alt="" loading="lazy">
+          <a class="paper-image paper-image--pasdf" href="assets/pasdf-network.svg" target="_blank" rel="noopener" aria-label="Open the full-size PASDF architecture in a new tab" title="View full-size architecture">
+            <img src="assets/pasdf-network.svg" width="1600" height="758" alt="PASDF pose-wise alignment and signed distance field architecture" loading="lazy">
           </a>
           <div class="paper-copy">
             <h3><a href="https://arxiv.org/abs/2505.24431">Bridging 3D Anomaly Localization and Repair via High-Quality Continuous Geometric Representation</a></h3>
@@ -80,8 +81,8 @@
           </div>
         </article>
         <article class="publication">
-          <a class="paper-image paper-image--mulsen" href="https://arxiv.org/abs/2412.14592" tabindex="-1" aria-hidden="true">
-            <img src="assets/mulsen-pipeline.png" width="914" height="567" alt="" loading="lazy">
+          <a class="paper-image paper-image--mulsen" href="assets/mulsen-pipeline.svg" target="_blank" rel="noopener" aria-label="Open the full-size MulSen-AD architecture in a new tab" title="View full-size architecture">
+            <img src="assets/mulsen-pipeline.svg" width="1826" height="1133" alt="MulSen-AD RGB, infrared, and point-cloud memory banks and Decision Gating Unit" loading="lazy">
           </a>
           <div class="paper-copy">
             <h3><a href="https://arxiv.org/abs/2412.14592">Multi-Sensor Object Anomaly Detection: Unifying Appearance, Geometry, and Internal Properties</a></h3>
@@ -93,10 +94,10 @@
         </article>
         <article class="publication">
           <div class="paper-image paper-video paper-video--physics">
-            <video id="physics-video" data-label="Phys-AD: 15 physical-interaction demonstrations in a 5-by-3 grid" loop muted playsinline preload="metadata" poster="assets/videos/phys-ad-grid-poster.jpg" aria-label="Phys-AD: 15 physical-interaction demonstrations in a 5-by-3 grid">
-              <source src="assets/videos/phys-ad-grid.webm" type="video/webm">
-              <source src="assets/videos/phys-ad-grid.mp4" type="video/mp4">
-              <a href="assets/videos/phys-ad-grid.mp4">Watch the Phys-AD demonstrations</a>
+            <video id="physics-video" data-label="Phys-AD: 15 physical-interaction demonstrations in a 5-by-3 grid" loop muted playsinline preload="metadata" poster="assets/videos/phys-ad-grid-hq-poster.jpg" aria-label="Phys-AD: 15 physical-interaction demonstrations in a 5-by-3 grid">
+              <source src="assets/videos/phys-ad-grid-hq.webm" type="video/webm">
+              <source src="assets/videos/phys-ad-grid-hq.mp4" type="video/mp4">
+              <a href="assets/videos/phys-ad-grid-hq.mp4">Watch the Phys-AD demonstrations</a>
             </video>
           </div>
           <div class="paper-copy">
@@ -108,8 +109,8 @@
           </div>
         </article>
         <article class="publication">
-          <a class="paper-image paper-image--shapenet" href="https://arxiv.org/abs/2311.14897" tabindex="-1" aria-hidden="true">
-            <img src="assets/shapenet-architecture.png" width="1600" height="900" alt="" loading="lazy">
+          <a class="paper-image paper-image--shapenet" href="assets/shapenet-architecture.svg" target="_blank" rel="noopener" aria-label="Open the full-size Anomaly-ShapeNet architecture in a new tab" title="View full-size architecture">
+            <img src="assets/shapenet-architecture.svg" width="1600" height="900" alt="IMRNet training and testing architecture for 3D anomaly detection" loading="lazy">
           </a>
           <div class="paper-copy">
             <h3><a href="https://arxiv.org/abs/2311.14897">Towards Scalable 3D Anomaly Detection and Localization: A Benchmark via 3D Anomaly Synthesis and A Self-Supervised Learning Network</a></h3>

@@ -13,6 +13,8 @@ Personal academic homepage for Wenqiao Li.
 
 The website uses plain HTML, CSS, and a small video-playback script. No build step, package installation, or API key is needed. Video previews are available in WebM and MP4 for browser compatibility and respect reduced-motion preferences. There are no visible playback buttons: click a video or focus it and press Enter/Space to pause or resume. Without JavaScript, the poster remains visible and the publication's project link provides access to the full demonstration.
 
+Publication previews share a 16:10 frame, with a 22rem desktop media column. Content retains its original aspect ratio inside the frame; wide diagrams and the 5×3 video grid are not stretched or cropped. Click a method diagram to open its full-size SVG. The SVGs preserve vector text and paths from the original figure PDFs (embedded photos retain their source resolution). Video previews are re-encoded from the original clips: UVTA at 960×600 and Phys-AD at 2416×818, with H.264 CRF 17 and VP9 CRF 22.
+
 ## Preview locally
 
 ```bash
@@ -34,10 +36,10 @@ The layout is inspired by [Changyi Lin](https://linchangyi1.github.io/) and [Jon
 - Profile portrait: illustration supplied by Wenqiao Li on October 9, 2026.
 - UVTA: side-by-side clips of human light-bulb data collection at **1×** (`light1.mp4`, seconds 12–19.2, left) and robot light-bulb manipulation at **5×** (`light/light.mp4`, seconds 125–161, right), combined into a 7.2-second loop. Speed is applied only to the robot clip before compositing. These are separate demonstrations, not time-synchronized recordings. The crops focus on the hands and bulb and exclude the participant's face. No audio is included.
 - DexEMG: the robot-and-human-hand panel matching the supplied reference, displayed from the upper-left of the original [Figure 1](https://arxiv.org/html/2603.05861v1/figures/fig1-teaser-1.jpg), without the surrounding plots and other panels.
-- PASDF: full [network architecture](https://arxiv.org/html/2505.24431v1/network.png), including pose-wise alignment and the SDF network.
-- MulSen-AD: full [multimodal pipeline](https://arxiv.org/html/2412.14592v1/mulsen_pipeline.png), including RGB, infrared, and point-cloud memory banks and the Decision Gating Unit.
+- PASDF: full network architecture, including pose-wise alignment and the SDF network; SVG converted using `pdftocairo -svg` from `figs/network.pdf` in the [arXiv source](https://arxiv.org/src/2505.24431v1).
+- MulSen-AD: full multimodal pipeline, including RGB, infrared, and point-cloud memory banks and the Decision Gating Unit; SVG converted from `figs/mulsen_pipeline.pdf` in the [arXiv source](https://arxiv.org/src/2412.14592).
 - Phys-AD: the 15 normal physical-interaction videos from the [project homepage](https://guyao2023.github.io/Phys-AD/), arranged in its original 5-column × 3-row order. Each source loops independently at its original speed in a silent 12-second preview. Row 1: `ball.mp4`, `button.mp4`, `car.mp4`, `clip.mp4`, `hinge.mp4`; row 2: `liquid.mp4`, `magnet.mp4`, `rolling_bear.mp4`, `rubber_band.mp4`, `screw.mp4`; row 3: `slide.mp4`, `sticky_roller.mp4`, `toothpaste.mp4`, `fan_n.mp4`, `zipper.mp4`. Source URLs are relative to the project homepage.
-- Anomaly-ShapeNet: full [IMRNet training/testing architecture](https://arxiv.org/html/2311.14897v3/Architecture.png).
+- Anomaly-ShapeNet: full IMRNet training/testing architecture; SVG converted from `latex/figures/model/Architecture.pdf` in the [arXiv source](https://arxiv.org/src/2311.14897v3).
 
 Publication figures remain attributed to the respective research works and authors; they are not relicensed as website artwork.
 

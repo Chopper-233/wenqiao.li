@@ -16,7 +16,7 @@ a:hover { color: #a7530b; text-decoration: underline; }
 a:focus-visible { outline: 2px solid var(--link); outline-offset: 5px; border-radius: 2px; }
 p { margin: 0 0 .9375rem; }
 strong { font-weight: 650; }
-.page { max-width: 60rem; margin: 0 auto; padding: 4rem 2.25rem 1.75rem; }
+.page { max-width: 66rem; margin: 0 auto; padding: 4rem 2.25rem 1.75rem; }
 .skip-link { position: absolute; left: 1rem; top: -5rem; padding: .625rem 1rem; background: #fff; z-index: 2; }
 .skip-link:focus { top: 1rem; }
 .profile { display: grid; grid-template-columns: minmax(0, 1fr) 14.5rem; align-items: center; gap: 3.25rem; padding-bottom: 3rem; }
@@ -33,16 +33,13 @@ h1 { margin: 0 0 .5rem; font-size: 2.25rem; line-height: 1.25; font-weight: 500;
 h2 { font-size: 1.5625rem; line-height: 1.35; font-weight: 500; margin: 0; letter-spacing: -.025rem; }
 .section-heading > a { font-size: .875rem; }
 .publications { display: grid; gap: 2.25rem; margin-top: 1.75rem; }
-.publication { display: grid; grid-template-columns: 18rem minmax(0, 1fr); gap: 1.75rem; align-items: center; }
+.publication { display: grid; grid-template-columns: clamp(17rem, 33vw, 22rem) minmax(0, 1fr); gap: 1.75rem; align-items: center; }
+/* Consistent preview dimensions; contain preserves every diagram and video cell. */
 .paper-image { position: relative; display: flex; align-items: center; justify-content: center; width: 100%; aspect-ratio: 16 / 10; overflow: hidden; border: 1px solid var(--line); border-radius: .4rem; background: #fff; }
 .paper-image > img, .paper-image video { display: block; width: 100%; height: 100%; object-fit: contain; }
-.paper-image--pasdf { aspect-ratio: 1600 / 759; }
-.paper-image--mulsen { aspect-ratio: 914 / 567; }
-.paper-image--shapenet { aspect-ratio: 16 / 9; }
-.paper-image--dexemg { aspect-ratio: 2660 / 1920; }
+.paper-image--pasdf, .paper-image--mulsen, .paper-image--shapenet { cursor: zoom-in; }
 .dexemg-panel { display: block; width: 100%; height: 100%; overflow: hidden; }
-.paper-video { background: #f7f9fc; }
-.paper-video--physics { aspect-ratio: 1288 / 436; }
+.paper-video { background: #fff; }
 .paper-video video[role="button"] { cursor: pointer; }
 .paper-video video:focus-visible { outline: 3px solid #1768b4; outline-offset: -3px; }
 h3 { font-size: 1rem; line-height: 1.45; font-weight: 700; margin: 0 0 .4375rem; }
@@ -61,7 +58,7 @@ footer p { margin: 0; }
   .profile { grid-template-columns: minmax(0, 1fr) 9.375rem; gap: 1.5rem; padding-bottom: 2.25rem; align-items: start; }
   .portrait { width: 9.375rem; height: 9.375rem; margin-top: .5rem; }
   h1 { font-size: 2rem; }
-  .publication { grid-template-columns: 14rem minmax(0, 1fr); gap: 1.25rem; }
+  .publication { grid-template-columns: 17rem minmax(0, 1fr); gap: 1.25rem; }
 }
 @media (max-width: 43em) {
   .publication { grid-template-columns: 1fr; gap: 1rem; }
