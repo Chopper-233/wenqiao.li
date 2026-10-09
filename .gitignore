@@ -1,0 +1,7 @@
+.DS_Store
+Thumbs.db
+.openai/
+.sites-runtime/
+node_modules/
+__pycache__/
+*.log
