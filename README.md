@@ -28,7 +28,7 @@ GitHub settings: **Settings → Pages → Deploy from a branch → main → / (r
 
 ## Sources and credits
 
-The layout is inspired by [Changyi Lin](https://linchangyi1.github.io/) and [Jon Barron](https://jonbarron.info/). Publication metadata were checked against arXiv and the CVF Open Access proceedings. Unconfirmed degree dates, supervisors, awards, and employment titles are intentionally omitted.
+The layout is inspired by [Changyi Lin](https://linchangyi1.github.io/) and [Jon Barron](https://jonbarron.info/). The biography, advisors, and research affiliations were supplied by Wenqiao Li. Publication metadata were checked against arXiv and the CVF Open Access proceedings. Unconfirmed degree dates and awards are intentionally omitted.
 
 - Profile portrait: illustration supplied by Wenqiao Li on October 9, 2026.
 - UVTA: the author's project teaser, [project page](https://uni-vta.github.io/).
